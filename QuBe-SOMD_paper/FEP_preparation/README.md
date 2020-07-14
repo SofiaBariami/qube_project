@@ -13,6 +13,8 @@ The requisite information is extracted from the ONETEP file. For each atom, this
 
 QUBEKit is then used to write the pdb and xml files; if the protein consists of two or more fragments, these fragments are returned as separate files. Since each atom in the protein is in a unique environment, and therefore has unique charge and Lennard-Jones parameters, each atom in QUBEKit-pro is assigned a unique type. This means the entire protein to be treated as a single molecule rather than a collection of residues with fixed atom types.
 
+Practically, creating the files via QUBEKit is done simply through the command line interface. Navigating to a directory containing the ONETEP output file and the relevant pdb files, the command `QUBEKit-pro -build <name of pdb>` will perform the necessary steps described above.
+
 ### Using the files
 
 A combination of OpenMM and ParmEd is used to analyse the files. This is done by creating an OpenMM system in the usual way for the first fragment, then each successive fragment is loaded into this same system. Since QUBEKit uses geometric combination rules for the Lennard-Jones parameters (rather than Amber’s arithmetic combination rules), a small change is made to the OpenMM system object to allow for this. Having built the system with OpenMM, the energetics are calculated for the whole system, then using ParmEd, a full breakdown of each contributor is obtained (energy from bonds, angles, torsions and non-bonded). These energy results can then be compared with the energies computed using our SOMD interface as a check.
