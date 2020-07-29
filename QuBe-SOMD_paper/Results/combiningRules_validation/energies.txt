@@ -1,0 +1,171 @@
+Here are the energies of the 10 molecules that were chosen randomly to test the imoplementation of the geometric combining rules.
+
+1. Acetic Acid:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -31.5116 kcal mol-1
+* The energy from SOMD is: -31.5116 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is 5.1004253265318766e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -31.536 kcal mol-1
+* The energy from SOMD is: -31.536 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is 5.100426747617348e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is -1.4210854715202004e-14 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2. Methylacetate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -22.1723 kcal mol-1
+* The energy from SOMD is: -22.1723 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is 3.781971003036233e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -22.1988 kcal mol-1
+* The energy from SOMD is: -22.1988 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is 3.7819699372221294e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is 1.0658141036401503e-14 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3. dimethylacetamide
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -18.8614 kcal mol-1
+* The energy from SOMD is: -18.8614 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is 2.9662302836186427e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -19.0704 kcal mol-1
+* The energy from SOMD is: -19.0704 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is 2.966229928347275e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is 3.552713678800501e-15 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4. phenol
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -11.721 kcal mol-1
+* The energy from SOMD is: -11.721 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is 1.9051963562333185e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -11.7657 kcal mol-1
+* The energy from SOMD is: -11.7657 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is 1.9051956456905828e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is 7.105427357601002e-15 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+5. N-methylaniline
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -7.3487 kcal mol-1
+* The energy from SOMD is: -7.3487 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is 1.633962476432771e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -7.59408 kcal mol-1
+* The energy from SOMD is: -7.59408 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is 1.6339617658900352e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is 7.105427357601002e-15 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+6. acetophenone
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -3.93338 kcal mol-1
+* The energy from SOMD is: -3.93338 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is 1.562647433672737e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -4.09277 kcal mol-1
+* The energy from SOMD is: -4.09277 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is 1.562647700126263e-08 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is -2.6645352591003757e-15 kcal/mol when using geometric and arithmetic combining rules
+
+7. propane
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -1.40288 kcal mol-1
+* The energy from SOMD is: -1.40288 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is 1.6600008034828306e-09 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: -1.47748 kcal mol-1
+* The energy from SOMD is: -1.47748 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is 1.6599976948583617e-09 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is 3.1086244689504383e-15 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+8. propene
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: 2.60204 kcal mol-1
+* The energy from SOMD is: 2.60204 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is -8.714495791650734e-10 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: 2.42513 kcal mol-1
+* The energy from SOMD is: 2.42513 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is -8.714517996111226e-10 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is 2.220446049250313e-15 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+9. benzene
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: 7.46188 kcal mol-1
+* The energy from SOMD is: 7.46188 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is -2.1058221832959134e-09 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: 7.50136 kcal mol-1
+* The energy from SOMD is: 7.50136 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is -2.105820406939074e-09 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is -1.7763568394002505e-15 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+10. benzonitrile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING ARITHMETIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: 9.38863 kcal mol-1
+* The energy from SOMD is: 9.38863 kcal mol-1
+ For the arithmetic combining rules the single point energy difference between sire and somd at lambda 0.0 is -5.491624932574268e-09 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TESTING GEOMETRIC COMBINING RULES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* The energy from Sire is: 9.4081 kcal mol-1
+* The energy from SOMD is: 9.4081 kcal mol-1
+ For the geometric combining rules the single point energy difference between sire and somd at lambda 0.0 is -5.4916302616447865e-09 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The difference of the single point energies is 5.329070518200751e-15 kcal/mol when using geometric and arithmetic combining rules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
