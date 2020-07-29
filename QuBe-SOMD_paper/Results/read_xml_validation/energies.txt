@@ -1,0 +1,39 @@
+acetic acid	
+Energy computed with the geometric combining rules is: -31.536
+_________________________________________________________________________________________
+
+methylacetate	
+Energy computed with the geometric combining rules is: -22.1988
+_________________________________________________________________________________________
+
+dimethylacetamide	
+Energy computed with the geometric combining rules is: -19.0704
+_________________________________________________________________________________________
+
+phenol	
+Energy computed with the geometric combining rules is: -11.721
+_________________________________________________________________________________________
+
+N-methylaniline
+Energy computed with the geometric combining rules is: 	-7.5942
+_________________________________________________________________________________________
+
+acetophenone	
+Energy computed with the geometric combining rules is: -4.0962
+_________________________________________________________________________________________
+
+propane	
+Energy computed with the geometric combining rules is: -1.4775
+_________________________________________________________________________________________
+
+propene
+Energy computed with the geometric combining rules is: 	2.4251
+_________________________________________________________________________________________
+
+benzene	
+Energy computed with the geometric combining rules is: 7.5014
+_________________________________________________________________________________________
+
+benzonitrile	
+Energy computed with the geometric combining rules is: 9.4081
+_________________________________________________________________________________________
