@@ -17,7 +17,7 @@ BioSimSpace protocols and scripts used to generate the input files for FEP calcu
 1) Fragmented protein combination - Sofia
 
 2) Create QUBE ligand files to run with Sire:
-  - Make a "Ligands" folder in which you will have the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script.
+  - Make a "Ligands" folder in which you will have the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script. Example ligands can be found in the "Ligands" folder above.
   - Navigate to ipython where you saved Sire.app (e.g. ~/sire.app/bin/ipython)
   - Run the following command in ipython: **run ./qube_to_prmRst.py -p FILE.pdb -x FILE.xml**
   - This will produce .rst7 and .prm7 files for each ligand.
