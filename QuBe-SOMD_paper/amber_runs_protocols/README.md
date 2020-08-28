@@ -1,5 +1,5 @@
 Configure file for the runs with amber:
-
+```
 nmoves = 20000
 ncycles = 100
 buffered coordinates frequency = 5000
@@ -17,3 +17,4 @@ center solute = True
 lambda array = 0.00, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1
 verbose = True
 platform = CUDA
+```
