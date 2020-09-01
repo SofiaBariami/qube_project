@@ -3,7 +3,7 @@ BioSimSpace protocols and scripts used to generate the input files for FEP calcu
 
 **File Setup for Free Energy Calculations**
 
-NB. For the example ligands provided you will need to use protein2.
+NB. For the example ligands provided you will need to use the protein files found in Protein/force_field/Group2.
 
 *For use with **AMBER**:*
 1) Protein setup: 
