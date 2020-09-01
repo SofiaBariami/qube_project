@@ -3,6 +3,8 @@ BioSimSpace protocols and scripts used to generate the input files for FEP calcu
 
 **File Setup for Free Energy Calculations**
 
+NB. For the example ligands provided you will need to use protein2.
+
 *For use with **AMBER**:*
 1) Protein setup: 
   - Given the four fragments of the protein in pdb format, we are going to use the [parameterise.py](https://github.com/michellab/BioSimSpace/blob/devel/nodes/playground/parameterise.py) script of BioSimSpace to parameterise them with the ff14SB amber forcefield.
