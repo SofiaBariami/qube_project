@@ -71,3 +71,31 @@ NB. For the example ligands provided you will need to use the protein files foun
   - Nativage to the ipython in BioSimSpace.app (e.g. biosimspace.app/bin/ipython)
   - Run the following command for both bound and unbound environments: **run ./prepareFEP.py --input1 FILE1_sol.prm7 FILE1_sol_eq.rst7 --input2 FILE2_sol.prm7 FILE2_sol_eq.rst7 --output FILE1_to_FILE2**
   - This will create the perturbation files for your free energy calculations (e.g. for a transition of Lig1 to Lig2 the above command will create .mapping, .mergeat0.pdb. .pert, .prm7 and .rst7 files for this pertubration, both bound and unbound). 
+
+
+
+**To Run Free Energy Calculations**
+
+1) Create the folder setup:
+  - You will need a main folder from which to run the free energy command (runFEP), have scripts 7_ligand_lambdarun-comb.sh and 8_complex_lambdarun-comb.sh, the "pertlist", and where you will also have:
+    - A "Perturbations" folder in which will be the pertubations you wish to run, followed by bound and unbound simulation folders containing the relevant files (*i.e.* Lig1_to_Lig2/bound/L1_to_L2_bound.* ) 
+    - A "Parameters" folder where you will have the lambda.cfg file
+
+2) The "pertlist"
+  - This list details the perturbations you wish to simulate and should include only numbers (*e.g.* 1-2, 2-1 not, Lig1-Lig2 etc.)
+
+3) The lambda.cfg file
+  - Configuration files for both our AMBER and QUBE runs can be found here. 
+  - There are various parameters which can be altered in these files, namely the number of moves and cycles, the timestep, the type of constraints, the lambda windows used and the platform on which to run the calculation. 
+
+4) The 7_ligand_lambdarun-comb.sh and 8_complex_lambdarun-comb.sh scripts
+- Script 7_ligand_lambdarun-comb.sh runs the command for the unbound perturbations, whilst 8_complex_lambdarun-comb.sh runs the bound perturbations. 
+- You will need to specify in both scripts where to read the "somd-freenrg" file from, but if you have used the file structure suggested you should not need to change anything else in these scripts.
+
+5) Once the above is ready, you can start you free energy calculations with: **./runFEP**
+
+
+
+
+
+
