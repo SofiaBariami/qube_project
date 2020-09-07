@@ -2,7 +2,7 @@
 
 ## File Setup for Free Energy Calculations
 
-NB. For the ligands provided you will need to use the protein files for group2, found in Protein/"chosen_force_field"/Group2. **- is dependent on the FF they choose**
+NB. For the ligands provided you will need to use the protein files for group2, found in Protein/"chosen_force_field"/Group2. **- path is dependent on the FF they choose**
 
 ### 01) Protein setup: 
 
