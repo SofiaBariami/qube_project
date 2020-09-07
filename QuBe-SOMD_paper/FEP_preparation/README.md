@@ -98,13 +98,10 @@ NB. For the ligands provided you will need to use the protein files for group2, 
   - There are various parameters which can be altered in these files, namely the number of moves and cycles, the timestep, the type of constraints, the lambda windows used and the platform on which to run the calculation. 
 
 4) The ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh``` scripts
-- Script ```ligand_lambdarun-comb.sh``` runs the command for the unbound perturbations, whilst ```8_complex_lambdarun-comb.sh``` runs the bound perturbations. 
+- Script ```ligand_lambdarun-comb.sh``` runs the command for the unbound perturbations, whilst ```complex_lambdarun-comb.sh``` runs the bound perturbations. 
 - You will need to specify in both scripts where to read the "somd-freenrg" file from, but if you have used the file structure suggested you should not need to change anything else in these scripts.
 
-5) Once the above is ready, you can start you free energy calculations by running: ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```
-
-**NB no need to include run_FEP script, the commands above are enough**
-
+5) Once the above is ready, you can start you free energy calculations by running: ```./ligand_lambdarun-comb.sh``` and ```./complex_lambdarun-comb.sh```
 
 
 
