@@ -1,7 +1,6 @@
-BioSimSpace protocols and scripts used to generate the input files for FEP calculations. 
+## BioSimSpace protocols and scripts used to generate the input files for FEP calculations. 
 
-
-**File Setup for Free Energy Calculations**
+## File Setup for Free Energy Calculations
 
 NB. For the example ligands provided you will need to use the protein files found in Protein/force_field/Group2. **- no such directory??**
 
@@ -9,10 +8,10 @@ NB. For the example ligands provided you will need to use the protein files foun
 
   *For use with **AMBER**:*
   - Given the four fragments of the protein in pdb format, we are going to use the [parameterise.py](https://github.com/michellab/BioSimSpace/blob/devel/nodes/playground/parameterise.py) script of BioSimSpace to parameterise them with the ff14SB amber forcefield.
-  - Use the BioSimSpace python to run the following command: ```run ./parameterise.py --input FILE.pdb --forcefield ff14SB --output FILE```
+  - Use the BioSimSpace python **(what do you mean use the biosimspace python?)** to run the following command: ```run ./parameterise.py --input FILE.pdb --forcefield ff14SB --output FILE```
   - This will produce AMBER parameterised .rst7 and .prm7 files for each protein fragment.
   - Combine the protein fragments to get the whole protein:
-  (e.g. biosimspace.app/bin/ipython)
+  (e.g. biosimspace.app/bin/ipython) **- what does this mean?**
   - Use the BioSimSpace python to run the following command: ```run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12```
   - The combining process is done three times to combine the four fragments together. 
   
@@ -26,25 +25,24 @@ NB. For the example ligands provided you will need to use the protein files foun
   - The combining process is done three times to combine the four fragments together. 
   
   
-  
+### 02) Ligand setup:
 
-2) Create AMBER ligand files for Sire:
+  *For use with **AMBER**:*
+
   - Make a "Ligands" folder in which you will have the pdb files for each ligand and the parameterise.py script.
   - Navigate to ipython where you saved BioSimSpace.app (e.g. biosimspace.app/bin/ipython)
   - Run the following command: **run ./parameterise.py --input FILE.pdb --forcefield gaff2 --output FILE**
   - This will produce AMBER parameterised .rst7 and .prm7 files for each ligand.
 
+  *For use with **QUBE**:*
 
-
-
-
-2) Create QUBE ligand files to run with Sire:
   - Make a "Ligands" folder in which you will have the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script. Example ligands can be found in the "Ligands" folder above.
   - Navigate to ipython where you saved Sire.app (e.g. ~/sire.app/bin/ipython)
   - Run the following command in ipython: **run ./qube_to_prmRst.py -p FILE.pdb -x FILE.xml**
   - This will produce .rst7 and .prm7 files for each ligand.
   
-*From here the setup is the same for either force field.* 
+
+**From here the setup is the same for either force field.**
   
 3) Solvate the ligands:
   - In the "Ligands" folder you should now copy in the solvate.py script.
