@@ -31,14 +31,14 @@ NB. For the ligands provided you will need to use the protein files for group2, 
 
   - Make a "Ligands" folder in which you will have the pdb files for each ligand and the parameterise.py script.
   - Navigate to ipython where you saved BioSimSpace.app (e.g. biosimspace.app/bin/ipython)
-  - Run the following command: **run ./parameterise.py --input FILE.pdb --forcefield gaff2 --output FILE**
+  - Run the following command: ```run ./parameterise.py --input FILE.pdb --forcefield gaff2 --output FILE```
   - This will produce AMBER parameterised .rst7 and .prm7 files for each ligand.
 
   *For use with **QUBE**:*
 
   - Make a "Ligands" folder in which you will have the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script. Example ligands can be found in the "Ligands" folder above.
   - Navigate to ipython where you saved Sire.app (e.g. ~/sire.app/bin/ipython)
-  - Run the following command in ipython: **run ./qube_to_prmRst.py -p FILE.pdb -x FILE.xml**
+  - Run the following command in ipython: ```run ./qube_to_prmRst.py -p FILE.pdb -x FILE.xml```
   - This will produce .rst7 and .prm7 files for each ligand.
   
 
@@ -48,7 +48,7 @@ NB. For the ligands provided you will need to use the protein files for group2, 
 
   - In the "Ligands" folder you should now copy in the solvate.py script.
   - Navigate to ipython where you saved BioSimSpace.app (e.g. biosimspace.app/bin/ipython)
-  - Run the following command: **run ./solvate.py --input FILE.prm7 FILE.rst7 --output FILE_sol --water tip3p --extent 26**
+  - Run the following command: ```run ./solvate.py --input FILE.prm7 FILE.rst7 --output FILE_sol --water tip3p --extent 26```
   - This will create solvated, unbound ligand files (e.g. FILE_sol.prm7). The above is the box size used for our system.
   
 ### 04) Combine the ligands and protein:
@@ -84,7 +84,7 @@ NB. For the ligands provided you will need to use the protein files for group2, 
 **Set up a directory above with an example calculation with the directory structure as described below. Include all scripts that you sent me, I will edit to generalise them. But in general just replace specific paths by <path to somd> etc**
 
 1) Create the folder setup:
-  - You will need a main folder from which to run the free energy command (runFEP), have scripts 7_ligand_lambdarun-comb.sh and 8_complex_lambdarun-comb.sh, the "pertlist", and where you will also have:
+  - You will need a main folder from which to run the free energy scripts, ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```, the "pertlist", and where you will also have:
     - A "Perturbations" folder in which will be the pertubations you wish to run, followed by bound and unbound simulation folders containing the relevant files (*i.e.* Lig1_to_Lig2/bound/L1_to_L2_bound.* ) 
     - A "Parameters" folder where you will have the lambda.cfg file
 
@@ -97,14 +97,11 @@ NB. For the ligands provided you will need to use the protein files for group2, 
   - Configuration files for both our AMBER and QUBE runs can be found here. 
   - There are various parameters which can be altered in these files, namely the number of moves and cycles, the timestep, the type of constraints, the lambda windows used and the platform on which to run the calculation. 
 
-4) The 7_ligand_lambdarun-comb.sh and 8_complex_lambdarun-comb.sh scripts
-- Script 7_ligand_lambdarun-comb.sh runs the command for the unbound perturbations, whilst 8_complex_lambdarun-comb.sh runs the bound perturbations. 
+4) The ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh``` scripts
+- Script ```ligand_lambdarun-comb.sh``` runs the command for the unbound perturbations, whilst ```complex_lambdarun-comb.sh``` runs the bound perturbations. 
 - You will need to specify in both scripts where to read the "somd-freenrg" file from, but if you have used the file structure suggested you should not need to change anything else in these scripts.
 
-5) Once the above is ready, you can start you free energy calculations by running: ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```
-
-**NB no need to include run_FEP script, the commands above are enough**
-
+5) Once the above is ready, you can start you free energy calculations by running: ```./ligand_lambdarun-comb.sh``` and ```./complex_lambdarun-comb.sh```
 
 
 
