@@ -81,8 +81,6 @@ NB. For the ligands provided you will need to use the protein files for group2, 
 
 ### 08) Free Energy Calculations
 
-**Set up a directory above with an example calculation with the directory structure as described below. Include all scripts that you sent me, I will edit to generalise them. But in general just replace specific paths by <path to somd> etc**
-
 1) Create the folder setup:
   - You will need a main folder from which to run the free energy scripts, ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```, the "pertlist", and where you will also have:
     - A "Perturbations" folder in which will be the pertubations you wish to run, followed by bound and unbound simulation folders containing the relevant files (*i.e.* Lig1_to_Lig2/bound/L1_to_L2_bound.* ) 
