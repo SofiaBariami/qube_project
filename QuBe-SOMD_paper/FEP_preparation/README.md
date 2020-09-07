@@ -79,9 +79,9 @@ NB. For the example ligands provided you will need to use the protein files foun
   - Run the following command for both bound and unbound environments: ```run ./prepareFEP.py --input1 FILE1_sol.prm7 FILE1_sol_eq.rst7 --input2 FILE2_sol.prm7 FILE2_sol_eq.rst7 --output FILE1_to_FILE2```
   - This will create the perturbation files for your free energy calculations (e.g. for a transition of Lig1 to Lig2 the above command will create .mapping, .mergeat0.pdb. .pert, .prm7 and .rst7 files for this pertubration, both bound and unbound). 
 
+### 08) Free Energy Calculations
 
-
-**To Run Free Energy Calculations**
+**Set up a directory above with an example calculation with the directory structure as described below. Include all scripts that you sent me, I will edit to generalise them. But in general just replace specific paths by <path to somd> etc**
 
 1) Create the folder setup:
   - You will need a main folder from which to run the free energy command (runFEP), have scripts 7_ligand_lambdarun-comb.sh and 8_complex_lambdarun-comb.sh, the "pertlist", and where you will also have:
@@ -91,6 +91,8 @@ NB. For the example ligands provided you will need to use the protein files foun
 2) The "pertlist"
   - This list details the perturbations you wish to simulate and should include only numbers (*e.g.* 1-2, 2-1 not, Lig1-Lig2 etc.)
 
+**Upload config files corresponding to out runs - ie parameters match paper**
+
 3) The lambda.cfg file
   - Configuration files for both our AMBER and QUBE runs can be found here. 
   - There are various parameters which can be altered in these files, namely the number of moves and cycles, the timestep, the type of constraints, the lambda windows used and the platform on which to run the calculation. 
@@ -99,9 +101,9 @@ NB. For the example ligands provided you will need to use the protein files foun
 - Script 7_ligand_lambdarun-comb.sh runs the command for the unbound perturbations, whilst 8_complex_lambdarun-comb.sh runs the bound perturbations. 
 - You will need to specify in both scripts where to read the "somd-freenrg" file from, but if you have used the file structure suggested you should not need to change anything else in these scripts.
 
-5) Once the above is ready, you can start you free energy calculations with: **./runFEP**
+5) Once the above is ready, you can start you free energy calculations by running: ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```
 
-
+**NB no need to include run_FEP script, it is very simple**
 
 
 
