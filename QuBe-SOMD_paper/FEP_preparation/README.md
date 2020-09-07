@@ -84,7 +84,7 @@ NB. For the ligands provided you will need to use the protein files for group2, 
 **Set up a directory above with an example calculation with the directory structure as described below. Include all scripts that you sent me, I will edit to generalise them. But in general just replace specific paths by <path to somd> etc**
 
 1) Create the folder setup:
-  - You will need a main folder from which to run the free energy command (runFEP), have scripts 7_ligand_lambdarun-comb.sh and 8_complex_lambdarun-comb.sh, the "pertlist", and where you will also have:
+  - You will need a main folder from which to run the free energy scripts, ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```, the "pertlist", and where you will also have:
     - A "Perturbations" folder in which will be the pertubations you wish to run, followed by bound and unbound simulation folders containing the relevant files (*i.e.* Lig1_to_Lig2/bound/L1_to_L2_bound.* ) 
     - A "Parameters" folder where you will have the lambda.cfg file
 
@@ -97,8 +97,8 @@ NB. For the ligands provided you will need to use the protein files for group2, 
   - Configuration files for both our AMBER and QUBE runs can be found here. 
   - There are various parameters which can be altered in these files, namely the number of moves and cycles, the timestep, the type of constraints, the lambda windows used and the platform on which to run the calculation. 
 
-4) The 7_ligand_lambdarun-comb.sh and 8_complex_lambdarun-comb.sh scripts
-- Script 7_ligand_lambdarun-comb.sh runs the command for the unbound perturbations, whilst 8_complex_lambdarun-comb.sh runs the bound perturbations. 
+4) The ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh``` scripts
+- Script ```ligand_lambdarun-comb.sh``` runs the command for the unbound perturbations, whilst ```8_complex_lambdarun-comb.sh``` runs the bound perturbations. 
 - You will need to specify in both scripts where to read the "somd-freenrg" file from, but if you have used the file structure suggested you should not need to change anything else in these scripts.
 
 5) Once the above is ready, you can start you free energy calculations by running: ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```
