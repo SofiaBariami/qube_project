@@ -103,7 +103,7 @@ NB. For the example ligands provided you will need to use the protein files foun
 
 5) Once the above is ready, you can start you free energy calculations by running: ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```
 
-**NB no need to include run_FEP script, it is very simple**
+**NB no need to include run_FEP script, the commands above are enough**
 
 
 
