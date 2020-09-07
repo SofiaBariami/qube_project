@@ -31,14 +31,14 @@ NB. For the ligands provided you will need to use the protein files for group2, 
 
   - Make a "Ligands" folder in which you will have the pdb files for each ligand and the parameterise.py script.
   - Navigate to ipython where you saved BioSimSpace.app (e.g. biosimspace.app/bin/ipython)
-  - Run the following command: **run ./parameterise.py --input FILE.pdb --forcefield gaff2 --output FILE**
+  - Run the following command: ```run ./parameterise.py --input FILE.pdb --forcefield gaff2 --output FILE```
   - This will produce AMBER parameterised .rst7 and .prm7 files for each ligand.
 
   *For use with **QUBE**:*
 
   - Make a "Ligands" folder in which you will have the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script. Example ligands can be found in the "Ligands" folder above.
   - Navigate to ipython where you saved Sire.app (e.g. ~/sire.app/bin/ipython)
-  - Run the following command in ipython: **run ./qube_to_prmRst.py -p FILE.pdb -x FILE.xml**
+  - Run the following command in ipython: ```run ./qube_to_prmRst.py -p FILE.pdb -x FILE.xml```
   - This will produce .rst7 and .prm7 files for each ligand.
   
 
@@ -48,7 +48,7 @@ NB. For the ligands provided you will need to use the protein files for group2, 
 
   - In the "Ligands" folder you should now copy in the solvate.py script.
   - Navigate to ipython where you saved BioSimSpace.app (e.g. biosimspace.app/bin/ipython)
-  - Run the following command: **run ./solvate.py --input FILE.prm7 FILE.rst7 --output FILE_sol --water tip3p --extent 26**
+  - Run the following command: ```run ./solvate.py --input FILE.prm7 FILE.rst7 --output FILE_sol --water tip3p --extent 26```
   - This will create solvated, unbound ligand files (e.g. FILE_sol.prm7). The above is the box size used for our system.
   
 ### 04) Combine the ligands and protein:
