@@ -3,7 +3,7 @@
 on how to get the correstonding amber-type files for further processing with SOMD. 
 
 
-###XML generation
+### XML generation
 
 **Chris, plese upload the onetep and pdb files needed as input to qubekit-pro. Also include parmed scripts described below, ie everything needed to run the calculations performed in the paper**
 
