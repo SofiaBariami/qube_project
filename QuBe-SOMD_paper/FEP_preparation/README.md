@@ -5,8 +5,9 @@ BioSimSpace protocols and scripts used to generate the input files for FEP calcu
 
 NB. For the example ligands provided you will need to use the protein files found in Protein/force_field/Group2.
 
-*For use with **AMBER**:*
-1) Protein setup: 
+01) Protein setup: 
+
+  *For use with **AMBER**:*
   - Given the four fragments of the protein in pdb format, we are going to use the [parameterise.py](https://github.com/michellab/BioSimSpace/blob/devel/nodes/playground/parameterise.py) script of BioSimSpace to parameterise them with the ff14SB amber forcefield.
   - Use the BioSimSpace python to run the following command: **run ./parameterise.py --input FILE.pdb --forcefield ff14SB --output FILE**
   - This will produce AMBER parameterised .rst7 and .prm7 files for each protein fragment.
@@ -14,6 +15,17 @@ NB. For the example ligands provided you will need to use the protein files foun
   (e.g. biosimspace.app/bin/ipython)
   - Use the BioSimSpace python to run the following command: **run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12**
   - The combining process is done three times to combine the four fragments together. 
+  
+  *For use with **QUBE**:*
+  - Given the four fragments of the protein in xml and pdb format, we are going to use the [qube_to_prmRst.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/qube_to_prmRst.py) to read the xml/pdb files and generate the corresponding amber files for each fragment:
+  - Use the Sire python to run the following command: **~/sire.app/bin/ipython qube_to_prmRst.py -x fragX.xml -p fragX.pdb**
+  - This will produce AMBER parameterised .rst7 and .prm7 files for each protein fragment.
+  - The combining process to get the whole protein is the same as the one we did for the amber parameterisation:
+  (e.g. biosimspace.app/bin/ipython)
+  - Use the BioSimSpace python to run the following command: **run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12**
+  - The combining process is done three times to combine the four fragments together. 
+  
+  
   
 
 2) Create AMBER ligand files for Sire:
@@ -23,15 +35,7 @@ NB. For the example ligands provided you will need to use the protein files foun
   - This will produce AMBER parameterised .rst7 and .prm7 files for each ligand.
 
 
-*For use with **QUBE**:*
-1) Fragmented protein combination
-  - Given the four fragments of the protein in xml and pdb format, we are going to use the [qube_to_prmRst.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/qube_to_prmRst.py) to read the xml/pdb files and generate the corresponding amber files for each fragment:
-  - Use the Sire python to run the following command: **~/sire.app/bin/ipython qube_to_prmRst.py -x fragX.xml -p fragX.pdb**
-  - This will produce AMBER parameterised .rst7 and .prm7 files for each protein fragment.
-  - The combining process to get the whole protein is the same as the one we did for the amber parameterisation:
-  (e.g. biosimspace.app/bin/ipython)
-  - Use the BioSimSpace python to run the following command: **run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12**
-  - The combining process is done three times to combine the four fragments together. 
+
 
 
 2) Create QUBE ligand files to run with Sire:
