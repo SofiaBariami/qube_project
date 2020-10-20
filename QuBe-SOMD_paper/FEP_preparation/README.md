@@ -6,21 +6,16 @@
 
   *For use with **AMBER**:*
   - Given the four fragments of the protein in pdb format, we are going to use the [parameterise.py](https://github.com/michellab/BioSimSpace/blob/devel/nodes/playground/parameterise.py) script of BioSimSpace to parameterise them with the ff14SB amber forcefield.
-  - Use the BioSimSpace python **(what do you mean use the biosimspace python?)** to run the following command: ```run ./parameterise.py --input FILE.pdb --forcefield ff14SB --output FILE```
-  - This will produce AMBER parameterised .rst7 and .prm7 files for each protein fragment.
-  - Combine the protein fragments to get the whole protein:
-  (e.g. biosimspace.app/bin/ipython) **- what does this mean?**
-  - Use the BioSimSpace python to run the following command: ```run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12```
-  - The combining process is done three times to combine the four fragments together. 
+  - Install BioSimSpace (https://github.com/michellab/BioSimSpace/) and from now on use the BioSimSpace python (~/biosimspace.app/bin/ipython) to run the following commands: 
+  - Produce AMBER parameterised .rst7 and .prm7 files for each protein fragment: ```run ./parameterise.py --input FILE.pdb --forcefield ff14SB --output FILE```
+  - Combine the protein fragments to get the whole protein: ```run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12``` (The combining process is done three times to combine the four fragments together.)
   
   *For use with **QUBE**:*
   - Given the four fragments of the protein in xml and pdb format, we are going to use the [qube_to_prmRst.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/qube_to_prmRst.py) to read the xml/pdb files and generate the corresponding amber files for each fragment:
   - Use the Sire python to run the following command: ```~/sire.app/bin/ipython qube_to_prmRst.py -x fragX.xml -p fragX.pdb```
   - This will produce AMBER parameterised .rst7 and .prm7 files for each protein fragment.
   - The combining process to get the whole protein is the same as the one we did for the amber parameterisation:
-  (e.g. biosimspace.app/bin/ipython) **- what does this mean?**
-  - Use the BioSimSpace python to run the following command: ```run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12```
-  - The combining process is done three times to combine the four fragments together. 
+  - With ~/biosimspace.app/bin/ipython run: ```run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12``` (The combining process is done three times to combine the four fragments together)
   
   
 ### 02) Ligand setup:
