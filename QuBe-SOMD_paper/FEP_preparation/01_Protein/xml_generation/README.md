@@ -7,10 +7,10 @@ Practically, creating the necessary files via QUBEKit is done simply through the
 Navigating to a directory containing the ONETEP output file and the relevant pdb files, the command 
 `QUBEKit-pro -build <name of pdb>` will perform the necessary steps described below.
 
-The requisite information non-bonded parameter information is extracted from the ONETEP file. 
+The requisite non-bonded parameter information is extracted from the ONETEP file. 
 QUBEKit-pro searches the ddec.onetep file top to bottom until all charge data is populated.
 As such, if using QUBEKit-pro for a fragment, 
-only the charge data for that fragment should be left in the ddec file (note that this process is not currently automated and users are responsible for generating and preparing the required onetep files).
+only the charge data for that fragment should be left in the ddec file (note that this process is not currently automated and users are responsible for generating and preparing the required ONETEP files).
 For each atom, this is the partial charge and the effective volume. 
 These parameters are then used to calculate the Lennard-Jones parameters via atom-in-molecule electron density partitioning. 
 Following this calculation, the atoms previously marked for symmetrisation are symmetrised. 
