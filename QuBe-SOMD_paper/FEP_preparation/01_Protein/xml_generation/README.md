@@ -9,13 +9,32 @@ Navigating to a directory containing the ONETEP output file and the relevant pdb
 
 An extension to QUBEKit, QUBEKit-pro (meaning protein) is used to generate the xml files from the pdb and ONETEP output files. 
 
-QUBE-pro builds the xml by first reading the pdb file to get the full topology of the protein or fragment. This gives atom types, positions and bonds, as well as some other information such as the amino acids and if the protein is split into subunits. At this stage, certain groups of atoms are picked out for later symmetrisation such as hydrogens on the same methyl or amine groups. 
+QUBE-pro builds the xml by first reading the pdb file to get the full topology of the protein or fragment. 
+This gives atom types, positions and bonds, 
+as well as some other information such as the amino acids and if the protein is split into subunits. 
+At this stage, certain groups of atoms are picked out for later symmetrisation such as hydrogens on the same methyl or amine groups. 
 
-With the structure stored, a parametrisation step is performed (Allen, 2019). A general protein xml contains bonded parameters for all atoms in the amino acids (and the caps such as NME or ACE). This general xml is used to map parameters to the protein in question, using the now stored structure. Non-bonded data is, for now, ignored since this comes from the ONETEP output file.
+With the structure stored, a parametrisation step is performed (Allen, 2019). 
+A general protein xml contains bonded parameters for all atoms in the amino acids 
+(and the caps such as NME or ACE). 
+This general xml is used to map parameters to the protein in question, using the now stored structure.
+Non-bonded data is, for now, ignored since this comes from the ONETEP output file.
 
-The requisite information is extracted from the ONETEP file. For each atom, this is the partial charge and the effective volume. These parameters are then used to calculate the Lennard-Jones parameters via atom-in-molecule electron density partitioning (Cole, 2016). Following this calculation, the atoms previously marked for symmetrisation are symmetrised. These parameters are then stored for use in producing the final xml file.
+The requisite information is extracted from the ONETEP file. 
+QUBEKit-pro searches the ddec.onetep file top to bottom until all charge data is populated.
+As such, if using QUBEKit-pro for a fragment, 
+only the charge data for that fragment should be left in the ddec file.
+For each atom, this is the partial charge and the effective volume. 
+These parameters are then used to calculate the Lennard-Jones parameters via atom-in-molecule electron density partitioning (Cole, 2016). 
+Following this calculation, the atoms previously marked for symmetrisation are symmetrised. 
+These parameters are then stored for use in producing the final xml file.
 
-QUBEKit is then used to write the pdb and xml files; if the protein consists of two or more fragments, these fragments are returned as separate files. Since each atom in the protein is in a unique environment, and therefore has unique charge and Lennard-Jones parameters, each atom in QUBEKit-pro is assigned a unique type. This means the entire protein to be treated as a single molecule rather than a collection of residues with fixed atom types.
+QUBEKit is then used to write the pdb and xml files; if the protein consists of two or more fragments, 
+these fragments are returned as separate files. 
+Since each atom in the protein is in a unique environment, 
+and therefore has unique charge and Lennard-Jones parameters, 
+each atom in QUBEKit-pro is assigned a unique type. 
+This means the entire protein is to be treated as a single molecule rather than a collection of residues with fixed atom types.
 
 
 ### Using the files
