@@ -28,7 +28,7 @@
 
   *For use with **QUBE**:*
 
-  - Make a "Ligands" folder in which you will have the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script. Example ligands can be found in the "Ligands" folder above.
+  - Make a "Ligands" folder into which you will copy the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script. An example can be found in the 02_Ligand_Setup directory, and a full set of ligand inputs can be found in the "QUBE_inputs" folder above.
   - Use the Sire.app python (e.g. ~/sire.app/bin/ipython) to run the following command: ```run ./qube_to_prmRst.py -p FILE.pdb -x FILE.xml```
   - This will produce .rst7 and .prm7 files for each ligand.
   
