@@ -15,7 +15,7 @@ With the structure stored, a parametrisation step is performed (Allen, 2019). A 
 
 The requisite information is extracted from the ONETEP file. For each atom, this is the partial charge and the effective volume. These parameters are then used to calculate the Lennard-Jones parameters via atom-in-molecule electron density partitioning (Cole, 2016). Following this calculation, the atoms previously marked for symmetrisation are symmetrised. These parameters are then stored for use in producing the final xml file.
 
-QUBEKit is then used to write the pdb and xml files; if the protein consists of two or more fragments, these fragments are returned as separate files. Since each atom in the protein is in a unique environment, and therefore has unique charge and Lennard-Jones parameters, each atom in QUBEKit-pro is assigned a unique type. This means the entire protein to be treated as a single molecule rather than a collection of residues with fixed atom types.
+QUBEKit is then used to write the pdb and xml files; if the protein consists of two or more fragments, these fragments should be treated separately when generating the fragment files. Since each atom in the protein is in a unique environment, and therefore has unique charge and Lennard-Jones parameters, each atom in QUBEKit-pro is assigned a unique type. This means the entire protein to be treated as a single molecule rather than a collection of residues with fixed atom types.
 
 
 ### Using the files
