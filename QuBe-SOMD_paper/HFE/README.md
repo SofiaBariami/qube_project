@@ -28,5 +28,6 @@ From this point on, the process is the same as the one for the molecules in vacu
 Analysis: 
 
 ~/sire.app/bin/analyse_freenrg mbar generates a dat file with the free energies for each step (discharge, vanish) for both legs. 
+
 To derive the hydration free energy, we use the following formula: 
 **DDG_hyd = (DG_Vac_Discharge + DG_Vac_vanish) - (DG_Solv_Discharge + DG_Solv_vanish)**
