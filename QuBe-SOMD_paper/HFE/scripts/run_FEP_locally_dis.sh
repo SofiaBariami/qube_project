@@ -7,3 +7,5 @@ cd lambda-$i
 ~/sire.app/bin/somd-freenrg -C  ../../input/sim_dis.cfg -d 0 -l $i -p OpenCL
 cd ../
 done
+
+~/sire.app/bin/analyse_freenrg mbar -i lambda-*/simfile.dat -o out.dat -p 90
