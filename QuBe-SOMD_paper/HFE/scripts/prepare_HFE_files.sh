@@ -84,22 +84,22 @@ cp ../../../../input_vac/SYSTEM.* .
 cp SYSTEM.* ../../discharge/input/
 cp ../../../../input_vac/MORPH.pert.vanish MORPH.pert
 cp ../../../../input_vac/MORPH.pert.discharge ../../discharge/input/MORPH.pert
-cp /PATH/TO/FILE/sim.cfg .
-cp sim.cfg ../../discharge/input
+cp /PATH/TO/FILE/sim_vac.cfg .
+cp /PATH/TO/FILE/sim_dis.cfg ../../discharge/input
 cd ../output/
-cp /PATH/TO/FILE/run_FEP_locally.sh .
-nohup bash run_FEP_locally.sh &
+cp /PATH/TO/FILE/run_FEP_locally_vac.sh .
+nohup bash run_FEP_locally_vac.sh &
 
 cd ../../../solv/vanish/input/
 cp ../../../../input_solv/SYSTEM.* .
 cp SYSTEM.* ../../discharge/input/
 cp ../../../../input_solv/MORPH.pert.vanish MORPH.pert
 cp ../../../../input_solv/MORPH.pert.discharge ../../discharge/input/MORPH.pert
-cp /PATH/TO/FILE/sim.cfg .
-cp sim.cfg ../../discharge/input
+cp /PATH/TO/FILE/sim_vac.cfg .
+cp /PATH/TO/FILE/sim_dis.cfg ../../discharge/input
 cd ../output/
-cp /PATH/TO/FILE/run_FEP_locally.sh .
-nohup bash run_FEP_locally.sh &
+cp /PATH/TO/FILE/run_FEP_locally_dis.sh .
+nohup bash run_FEP_locally_dis.sh &
 
 
 
