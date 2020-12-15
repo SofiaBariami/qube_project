@@ -1,5 +1,5 @@
 Here are the instructions to run automated Hydration Free Energy calculations using the QuBe FF.
-The following steps are done automatically using [prepare_HFE_files.sh](scripts/prepare_HFE_files.sh). This script needs some adjustments (file paths etc) to work on your workstation. 
+The following steps are done automatically using [prepare_HFE_files.sh](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/scripts/prepare_HFE_files.sh). This script needs some adjustments (file paths etc) to work on your workstation. 
 
 - For the vacuum simulations: 
 1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/qube_to_prmRst.py)
