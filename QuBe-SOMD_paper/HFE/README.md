@@ -17,4 +17,4 @@ The dimension of the side of the box is in A.
 From this point on, the process is the same as the one for the molecules in vacuum:
 4. Rename the amber files to SYSTEM.top and SYSTEM.crd
 5. Generate the. MORPH.pert files using the scripts [morph_step1.py] and [morph_step2.py]. 
-6. Create the folder architecture and submit the simulations. This is done automatically using [this script]().
+6. Create the folder architecture and submit the simulations. This is done automatically using [this script](scripts/prepare_HFE_files.sh). This script needs some adjustments (file paths etc) to work on your workstation. 
