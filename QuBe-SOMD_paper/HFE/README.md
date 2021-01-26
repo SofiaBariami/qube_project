@@ -28,8 +28,11 @@ From this point on, the process is the same as the one for the molecules in vacu
 Analysis: 
 
 ~/sire.app/bin/analyse_freenrg mbar generates a dat file with the free energies for each step (discharge, vanish) for both legs. 
+
 Corrections: 
-- FUNC.py: Evaluates the electrostatic correction for the free energy change
+- FUNC.py: Evaluates the electrostatic correction for the free energy change: FUNC_corr. This is run for lambda= 0 at the discharge leg.
+- ~/sire.app/bin/lj-tailcorrection Evaluates the end-point correction for the truncated vdW potentials. This is run for lambda= 0 and lambda= 1 of the vanish leg. 
+DG_LJCOR = (LJ correction at lambda 1.0 ) - (LJ correction at lambda 0.0) )
 
 To derive the hydration free energy, we use the following formula: 
-**DDG_hyd = (DG_Vac_Discharge + DG_Vac_vanish) - (DG_Solv_Discharge + DG_Solv_vanish) + FUNC_corr **
+**DDG_hyd = (DG_Vac_Discharge + DG_Vac_vanish) - (DG_Solv_Discharge + DG_Solv_vanish) + FUNC_corr + DG_LJCOR **
