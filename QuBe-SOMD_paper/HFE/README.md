@@ -36,4 +36,4 @@ DG_LJCOR = (LJ correction at lambda 1.0 ) - (LJ correction at lambda 0.0) )
 
 To derive the hydration free energy, we use the following formula:
 
-`DDG_hyd = (DG_Vac_Discharge + DG_Vac_vanish) - (DG_Solv_Discharge + DG_Solv_vanish) + FUNC_corr + DG_LJCOR`
+`DDG_hyd = (DG_Vac_Discharge + DG_Vac_Vanish) - (DG_Solv_Discharge + DG_Solv_Vanish) + FUNC_corr + DG_LJCOR`
