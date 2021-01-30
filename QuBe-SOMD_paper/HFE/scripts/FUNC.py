@@ -275,7 +275,7 @@ def updateSystemfromTraj(system, frame_xyz, cell_lengths, cell_angles):
     molnums.sort()
 
     for molnum in molnums:
-        mol = system.molecule(molnum).molecule()
+        mol = system.molecule(molnum)[0].molecule()
         molatoms = mol.atoms()
         molnatoms = mol.nAtoms()
         # Create an empty coord group using molecule so we get the correct layout
@@ -297,7 +297,7 @@ def updateSystemfromTraj(system, frame_xyz, cell_lengths, cell_angles):
     changedmols = MoleculeGroup("changedmols")
     mol_index = 0
     for molnum in molnums:
-        mol = system.molecule(molnum).molecule()
+        mol = system.molecule(molnum)[0].molecule()
         newmol_coords = newmols_coords[molnum]
         mol = mol.edit().setProperty("coordinates", newmol_coords).commit()
         changedmols.add(mol)
@@ -315,7 +315,7 @@ def SplitSoluteSolvent(system):
     solvent = MoleculeGroup("solvent")
     ions = MoleculeGroup("ions")
     for molnum in mol_numbers:
-        mol = molecules.molecule(molnum).molecule()
+        mol = molecules.molecule(molnum)[0].molecule()
         res0 = mol.residues()[0]
         
         if res0.name().value() in solvent_residues:
@@ -340,7 +340,7 @@ def centerAll(solutes, solvent, space):
 
     molNums = solutes_mols.molNums()
     for molnum in molNums:
-        mol = solutes.molecule(molnum).molecule()
+        mol = solutes.molecule(molnum)[0].molecule()
         molcoords = mol.property("coordinates")
         molcoords.translate(delta)
         mol = mol.edit().setProperty("coordinates", molcoords).commit()
@@ -349,7 +349,7 @@ def centerAll(solutes, solvent, space):
     solvent_mols = solvent.molecules()
     solvmolNums = solvent_mols.molNums()
     for molnum in solvmolNums:
-        mol = solvent.molecule(molnum).molecule()
+        mol = solvent.molecule(molnum)[0].molecule()
         molcoords = mol.property("coordinates")
         molcoords.translate(delta)
         mol = mol.edit().setProperty("coordinates",molcoords).commit()
