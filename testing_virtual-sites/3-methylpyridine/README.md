@@ -35,7 +35,7 @@ and also at lines 3188 - 3196:
             p_vs_params[8]= 0;
 ```
 Then sire must be compiled again.
-The folders for the sire installation are at:
+The folders for the sire installation are on Plato, at:
 `/export/users/sofia/Software/sire_vs/Sire`
 The name of the application should be `/export/users/sofia/sire-vs.app`
 
