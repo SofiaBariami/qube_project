@@ -1,6 +1,7 @@
 ## Running Alchemical Free Energy Calculations with Virtual Sites in Plato
 
 - How the code works: 
+
 Openmmmd.py is modified to include a function called `assignVirtualSites()` 
 
 This function is called when the molecular system is build, and the property "virtual-sites" is assigned to the first molecule of the system. 
@@ -37,4 +38,10 @@ Then sire must be compiled again.
 The folders for the sire installation are at:
 `/export/users/sofia/Software/sire_vs/Sire`
 The name of the application should be `/export/users/sofia/sire-vs.app`
+
+- Tips: 
+
+Sire must be compiled every time the charge of the virtual site changes *AND* every time we change from the discharge to the vanish leg, as at the vanish leg, the initial charge of the vSite should be 0, something that we also change manually. 
+
+
 
