@@ -1,5 +1,8 @@
-Here are the instructions to run automated Hydration Free Energy calculations using the QuBe FF.
+Here are the instructions to run automated Hydration Free Energy calculations using the QUBE FF.
 The following steps are done automatically using [build_solvated_systems.sh](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/scripts/build_solvated_systems.sh) and will produce simulation ready input files for both SOMD and Gromacs.
+You can build the required conda environment using the provided [environment.yaml](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/environment.yaml) file using the command `conda env create -f environment.yml`. To activate the environment use `conda activate biosim`.
+Note Gromacs must be installed separately and in this study we used version 2019.5.
+
 
 ## File Preparation 
 - copy the scripts folder to your desired workplace
